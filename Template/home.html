@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stroke Probability Detector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #626269;
+        }
+
+        .navbar-brand {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 28px; /* Increased font size */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+        }
+
+        .navbar-brand:hover {
+            color: #ffc107;
+        }
+
+        .form-label {
+            color: #626269;
+        }
+
+        .btn-primary {
+            background-color: #626269;
+            border-color:#626269;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #003366;
+            border-color: #00264d;
+            color: #ffffff;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            background-color: #626269;
+            color: #ffffff;
+            border-radius: 15px 15px 0 0;
+        }
+
+        /* .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 50;
+            width: 100%;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Stroke Probability Detector</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card">
+                    <div class="card-header text-center">
+                        Fill in the details
+                    </div>
+                    <div class="card-body">
+                        <form action="{{ url_for('result') }}" method="post">
+                            <div class="form-group">
+                                <label class="form-label" for="gender">Gender</label>
+                                <input type="text" class="form-control" id="gender" name="gender" placeholder="Gender">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="age">Age</label>
+                                <input type="text" class="form-control" id="age" name="age" placeholder="Enter your Age">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="hypertension">Hypertension</label>
+                                <input type="text" class="form-control" id="hypertension" name="hypertension" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="heart_disease">Heart Disease</label>
+                                <input type="text" class="form-control" id="heart_disease" name="heart_disease" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="ever_married">Have You Ever Married</label>
+                                <input type="text" class="form-control" id="ever_married" name="ever_married" placeholder="1 for Yes, 0 for No">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="work_type">Work Type</label>
+                                <input type="text" class="form-control" id="work_type" name="work_type" placeholder="0 for Govn Job, 1 for Never_worked, 2 for Private, 3 for Self-employed, 4 for Children">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="Residence_type">Residence Type</label>
+                                <input type="text" class="form-control" id="Residence_type" name="Residence_type" placeholder="For Urban 1, For Rural 0">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="avg_glucose_level">Average Glucose Level</label>
+                                <input type="text" class="form-control" id="avg_glucose_level" name="avg_glucose_level" placeholder="Average Glucose Level">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="bmi">BMI (Body Mass Index) </label>
+                                <input type="text" class="form-control" id="bmi" name="bmi" placeholder="BMI">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="smoking_status">Smoking Status</label>
+                                <input type="text" class="form-control" id="smoking_status" name="smoking_status" placeholder="0 for Unknown, 1 for Formerly Smoked, 2 for Never Smoked, 3 for Smokes">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p><center>Made with ❤️ by Aditya Prabhakar, Pranav Kr Singh, Sushil Singh, Shivraj Singh & Vishakha Singh.</center></p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
