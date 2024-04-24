@@ -25,16 +25,16 @@ For the backend infrastructure, we utilized Flask, a lightweight and flexible we
 ## Screenshots
 
 ### Home Page
-![Home Page](G:\STROKE PROBABILITY DETECTOR\Screenshots\home.png)
+![Home Page](Screenshots/home.png)
 
 ### Diagnosed with Risk of Stroke Page
-![Diagnosed with Risk of Stroke Page](G:\STROKE PROBABILITY DETECTOR\Screenshots\stroke.png)
+![Diagnosed with Risk of Stroke Page](Screenshots/stroke.png)
 
 ### Diagnosed with No Risk of Stroke Page
-![Diagnosed with No Risk of Stroke Page](G:\STROKE PROBABILITY DETECTOR\Screenshots\nostroke.png)
+![Diagnosed with No Risk of Stroke Page](Screenshots/nostroke.png)
 
 ### About Page
-![About Page](G:\STROKE PROBABILITY DETECTOR\Screenshots\about.png)
+![About Page](Screenshots/about.png)
 
 ## Usage
 
