@@ -54,6 +54,6 @@ To use the Stroke Probability Detector, follow these steps:
 - [Vishakha Singh](https://github.com/vishakhas13)
 - [Sushil Kumar](https://github.com/contributor2)
 
-## License
+<!--## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).-->
